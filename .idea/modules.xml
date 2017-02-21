@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SpikeDogWebserver.iml" filepath="$PROJECT_DIR$/SpikeDogWebserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JerryMouse4j.iml" filepath="$PROJECT_DIR$/JerryMouse4j.iml" />
     </modules>
   </component>
 </project>
