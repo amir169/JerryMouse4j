@@ -14,7 +14,7 @@ public class Response {
         this.body = body;
     }
 
-    public String writeAsString() {
+    protected String writeAsString() {
         return body;
     }
 

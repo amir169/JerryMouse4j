@@ -9,7 +9,7 @@ import java.net.Socket;
 public class RequestThread implements Runnable {
 
     private Socket connection;
-    RequestThread(Socket connection)
+    protected RequestThread(Socket connection)
     {
         this.connection = connection;
     }

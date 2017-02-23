@@ -13,7 +13,7 @@ public class Request {
     private Map<String,String> query;
     private String body;
 
-    Request(String HTTPMessage)
+    protected Request(String HTTPMessage)
     {
 
         headers = new HashMap<>();

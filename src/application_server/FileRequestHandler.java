@@ -9,14 +9,14 @@ public class FileRequestHandler{
 
     private String filePath;
 
-    public FileRequestHandler(String filePath) {
+    protected FileRequestHandler(String filePath) {
         if(filePath.equals("/"))
             this.filePath = "src/app/static_contents/index.html";
         else
             this.filePath = "src/app/static_contents" + filePath;
     }
 
-    public Response handle() throws Exception{
+    protected Response handle() throws Exception{
         InputStream input;
         System.out.println(filePath);
         try {

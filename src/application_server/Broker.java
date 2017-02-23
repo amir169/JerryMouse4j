@@ -6,7 +6,7 @@ import java.lang.reflect.InvocationTargetException;
  * Created by Amir Shams on 2/21/2017.
  */
 public class Broker {
-    public static Response callHandler(String path, Request request) throws Exception {
+    protected static Response callHandler(String path, Request request) throws Exception {
         if(path.contains(".do") || !path.contains("."))
         {
             path = path.split("\\.")[0];
