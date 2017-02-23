@@ -18,6 +18,7 @@ public class Broker {
             for(int i=1;i<pathParts.length-1;i++)
             {
                 String temp = pathParts[i].toLowerCase();
+                temp = temp.replaceAll("-","_");
                 classPath += temp + ".";
             }
             String[] className = pathParts[pathParts.length - 1].split("-");
