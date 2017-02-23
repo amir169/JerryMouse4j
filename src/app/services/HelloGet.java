@@ -10,8 +10,8 @@ import application_server.Response;
 public class HelloGet implements IServiceHandler {
     @Override
     public Response handle(Request request) throws Exception {
-        String name = request.getQuery().get("name");
-        String family = request.getQuery().get("family");
+        String name = request.getQuery("name");
+        String family = request.getQuery("family");
 
         return Response.ok("salam " + name + " " + family);
     }

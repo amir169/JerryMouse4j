@@ -55,12 +55,12 @@ public class Request {
         return method;
     }
 
-    public Map<String, String> getHeaders() {
-        return headers;
+    public String getHeader(String header) {
+        return headers.get(header);
     }
 
-    public Map<String, String> getQuery() {
-        return query;
+    public String getQuery(String parameter){
+        return query.get(parameter);
     }
 
     public String getBody() {
